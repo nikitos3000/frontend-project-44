@@ -1,16 +1,17 @@
 import { getRandomNum } from '../random.js'
-import run from '../index.js';
 import gamestarter from '../index.js';
 
 const rule ='Answer "yes" if the number is even, otherwise answer "no".';
 let number = getRandomNum()
+let rangemin = 1
+let rangemax = 100
 const iseven = (number) => number % 2 === 0;
 
 const game = () =>{
+  let number = getRandomNum(rangemin, rangemax)
     const correctanswer = iseven(number) ? 'yes' : 'no';
-    const question = number;
-    console.log(question)
-    return [question, correctanswer];
+    const Quest = number
+    return [correctanswer, Quest];
  
 
 };

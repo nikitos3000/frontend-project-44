@@ -9,8 +9,8 @@ const gamestarter = (game, rule) => {
     console.log(`Hello, ${username}!`);
     console.log(rule);
     for (let i = 0; i < round; i += 1) {
-     const { correctanswer, question } = game();
-     console.log(`Question: ${question}`);
+     const  [correctanswer, Quest] = game();
+     console.log(`Question: ${Quest}`);
      const playeranswer = readlineSync.question('Your answer: ');
      if (correctanswer !== playeranswer) {
         console.log(`'${playeranswer}' is wrong answer ;(. Correct answer was '${correctanswer}'.`);
