@@ -13,14 +13,14 @@ const getRandomOperator = (operators) => Math.floor(Math.random() * operators.le
 
 
 
-const calculate = (x, y, operator) => {
+const calculate = (a, b, operator) => {
     switch (operator) {
       case '+':
-        return x + y;
+        return a + b;
       case '-':
-        return x - y;
+        return a - b;
       case '*':
-        return x * y;
+        return a * b;
       default:
        return false
     };
