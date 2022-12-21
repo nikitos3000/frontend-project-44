@@ -19,7 +19,7 @@ const getProgression = (start, step, length) => {
     const progression = getProgression(startpoint, stepprogression, lengthprogression);
     const correctanswer = progression[finishpoint].toString();
     progression.splice(finishpoint, 1, '..');
-    const Quest = progression.push(' ');
+    const Quest = progression.join(' ');
     return [ correctanswer, Quest ];
   }
    
