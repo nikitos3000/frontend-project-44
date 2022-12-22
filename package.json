@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/nikitos3000/frontend-project-44#readme",
   "dependencies": {
-    "readline-sync": "github:anseki/readline-sync"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
