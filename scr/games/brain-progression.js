@@ -26,5 +26,4 @@ const game = () => {
 const gamestarterprogression = () => {
   gamestarter(game, rule);
 };
-gamestarterprogression();
 export default gamestarterprogression;

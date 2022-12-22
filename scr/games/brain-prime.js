@@ -30,5 +30,4 @@ const game = () => {
 const gamestarterprime = () => {
   gamestarter(game, rule);
 };
-gamestarterprime();
 export default gamestarterprime;
