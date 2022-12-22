@@ -21,6 +21,6 @@ brain-progression:
 
 brain-gcd:
 	node bin/brain-gcd.js
-brain-prime
-	node bin/brin-gcd.js
-	
+
+brain-prime:
+	node bin/brain-prime.js
