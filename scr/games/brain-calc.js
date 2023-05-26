@@ -35,6 +35,6 @@ const game = () => {
 const gamestartercalc = () => {
   gamestarter(game, rule);
 };
-gamestartercalc()
+
 
 export default gamestartercalc;
