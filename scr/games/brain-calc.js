@@ -26,7 +26,6 @@ const game = () => {
   const num2 = getRandomNum(rangemin, rangemax);
   const operator = operators[getRandomOperator(operators)];
   const Quest = `${num1} ${operator} ${num2}.`;
-  console.log(Quest);
   const correctanswer = calculate(num1, num2, operator);
   console.log(correctanswer);
   return [correctanswer, Quest];
