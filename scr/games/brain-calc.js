@@ -25,13 +25,16 @@ const game = () => {
   const num1 = getRandomNum(rangemin, rangemax);
   const num2 = getRandomNum(rangemin, rangemax);
   const operator = operators[getRandomOperator(operators)];
-  const Quest = `${num1} ${operator} ${num2}`;
-  const correctanswer = calculate(num1, num2, operator).toString();
+  const Quest = `${num1} ${operator} ${num2}.`;
+  console.log(Quest);
+  const correctanswer = calculate(num1, num2, operator);
+  console.log(correctanswer);
   return [correctanswer, Quest];
 };
 
 const gamestartercalc = () => {
   gamestarter(game, rule);
 };
+gamestartercalc()
 
 export default gamestartercalc;
